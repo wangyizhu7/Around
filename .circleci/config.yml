@@ -8,7 +8,7 @@ jobs:
       - checkout
       - setup_remote_docker
       - run: |
-          docker build -t [wangyizhu]/around .
+          docker build -t wangyizhu/around .
           docker login -u="$DOCKERHUB_USERNAME" -p="$DOCKERHUB_PASSWORD"
-          docker push [wangyizhu]/around
+          docker push wangyizhu/around
 
